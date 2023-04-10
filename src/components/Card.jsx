@@ -40,13 +40,10 @@ const Card = ({ name, fav, setFav }) => {
 
   useEffect(() => {
     setConsist(fav.includes(pokeName));
-  }, []);
+  }, [fav, pokeName]);
 
   useEffect(() => {
     fetchData();
-    console.log(consist);
-    console.log(pokeName);
-    console.log(fav.includes(pokeName));
   }, [name]);
   return (
     pokeName && (
@@ -64,7 +61,7 @@ const Card = ({ name, fav, setFav }) => {
               }`}
               onClick={addToFav}
             >
-              <Star toggle={consist ? true : false} />
+              <Star toggle={consist} />
             </span>
           </h2>
           <h3 className="text-zinc-500 text-lg font-semibold">#{id}</h3>
