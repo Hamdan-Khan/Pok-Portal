@@ -48,7 +48,9 @@ const Home = ({ fav, setFav }) => {
             })}
           </>
         ) : (
-          <>{<Card name={searchVal} fav={fav} setFav={setFav} />}</>
+          <>
+            {<Card name={searchVal.toLowerCase()} fav={fav} setFav={setFav} />}
+          </>
         )}
       </div>
       <Pagination setOffset={setOffset} offset={offset} />
