@@ -8,7 +8,11 @@ const Navbar = () => {
       <Link to="/" className="font-bold text-2xl" href="/">
         PokéPortal
       </Link>
-      <Link to="fav" className="btn btn-ghost normal-case text-xl" href="/fav">
+      <Link
+        to="fav"
+        className="flex gap-1 btn btn-ghost normal-case text-xl"
+        href="/fav"
+      >
         Favourites
         <Star toggle={true} />
       </Link>

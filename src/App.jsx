@@ -5,32 +5,6 @@ import Favourites from "./components/Favourites";
 import { useState } from "react";
 
 function App() {
-  /// Project: Pokédex
-  // Build a React application that allows users to search for a Pokemon by name and displays its details, including its image, type(s), and abilities. Use the Pokemon API to fetch the Pokemon data.
-
-  // Requirements:
-  // · Use React to build the application.
-  // · Use the Pokemon API (https://pokeapi.co/) to fetch data.
-  // · The application should have a search bar where users can enter a Pokemon name.
-  // · When the user submits the search, the application should fetch the Pokemon data and display it on the screen.
-  // · The application should display the Pokemon's image, name, type(s), and abilities.
-  // · Use CSS to style the application.
-  // · Use Git to track changes and submit your code to a GitHub repository.
-
-  // Bonus points:
-  // · Add pagination to the search results.
-  // · Allow users to search for Pokemon by type or ability.
-  // · Add animations to the UI.
-
-  // Tips:
-  // · Break down the task into smaller components and build them one at a time.
-  // · Use the fetch API or a third-party library like axios to make API calls.
-  // · Use the useState and useEffect hooks to manage state and fetch data.
-  // · Use CSS frameworks like Bootstrap or Material-UI to make styling easier.
-  // · Make sure your code is well-documented and follows best practices.
-
-  // Good luck!///
-
   const [fav, setFav] = useState(
     localStorage.getItem("favs") ? JSON.parse(localStorage.getItem("favs")) : []
   );
@@ -46,7 +20,22 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
-      <footer></footer>
+      <footer className="m-auto flex items-center gap-2 text-white justify-center my-1">
+        <a
+          href="https://hamdan-k.me"
+          className="mx-1 hover:underline duration-300"
+        >
+          &#169;Hamdan-Khan
+        </a>
+        <a
+          href="https://github.com/Hamdan-Khan/virtual-urdu-keyboard"
+          target="_blank"
+          className="mx-1 flex hover:font-medium items-center justify-center duration-300"
+        >
+          <span className="material-symbols-outlined mb-1">star</span>Star this
+          repo
+        </a>
+      </footer>
     </div>
   );
 }
