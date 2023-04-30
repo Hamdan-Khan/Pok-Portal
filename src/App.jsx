@@ -28,7 +28,7 @@ function App() {
           &#169;Hamdan-Khan
         </a>
         <a
-          href="https://github.com/Hamdan-Khan/virtual-urdu-keyboard"
+          href="https://github.com/Hamdan-Khan/Pokemon-Portal"
           target="_blank"
           className="mx-1 flex hover:font-medium items-center justify-center duration-300"
         >
